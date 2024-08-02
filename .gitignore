@@ -1,0 +1,54 @@
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+*.pem
+/lab/
+
+# debug
+npm-debug.log*
+.pnpm-debug.log*
+
+# ignore all .env files
+.env*
+# except .env.sample
+!.env.sample
+
+# vscode
+.vscode
+
+# eslint
+.eslintcache
+
+# e2e testing
+test/e2e/results/
+test/e2e/playwright-report/
+blob-report/
+playwright/.cache/
+
+# Local Redis file created when redis-server is ran
+*dump.rdb
+
+# Sentry Config File
+.sentryclirc
+
+# Sentry Test files
+# TODO: remix-ify tests from next pages/sentry-example-page.jsx
+# TODO: remix-ify tests from next pages/_error.jsx
+# TODO: remix-ify tests from next pages/api/sentry-example-api.js
+
+/.cache
+/public/build
+/build
+
+# Local Netlify folder
+.netlify
+
+.npmrc
+
+__pycache__

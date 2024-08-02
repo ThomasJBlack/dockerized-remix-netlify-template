@@ -1,0 +1,27 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - "./app:/snyking/app"
+    ports:
+    - 5173:5173
+    networks:
+    - snyking-network
+
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    volumes:
+    - "./backend:/snyking"
+    ports:
+    - 3000:3000
+    networks:
+    - snyking-network
+
+networks:
+  snyking-network:
+    driver: bridge
